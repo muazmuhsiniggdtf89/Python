@@ -1,0 +1,26 @@
+# Ask the user for the range
+start = int(input("Start number: "))
+end = int(input("End number: "))
+
+# Make an empty list for squares
+squares = []
+
+# Make a list of square numbers
+for i in range(start, end + 1):
+    squares.append(i * i)
+
+# Make lists for even and odd squares
+even = []
+odd = []
+
+# Separate even and odd squares
+for num in squares:
+    if num % 2 == 0:
+        even.append(num)
+    else:
+        odd.append(num)
+
+# Print the results
+print("All squares:", squares)
+print("Even squares:", even)
+print("Odd squares:", odd)
